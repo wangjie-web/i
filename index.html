@@ -28,6 +28,15 @@
 			media="screen"
 		/>
 	</head>
+	<script src="http://sxzstatic.oss-cn-shanghai.aliyuncs.com/lib/jquery/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+		$.get("http://192.168.1.140:30080/api/v1/book/list",{
+			page:1,
+			size:1
+		}, function(res){
+			console.log(res)
+		})
+	</script>
 	<body>
 		<section class="page-header">
 			<h1 class="project-name">Justory.GitHub.com</h1>
